@@ -1,0 +1,29 @@
+@import "src/theme/mixins/shadows";
+button{
+  margin-left: 5px;
+  $main-color:var(--color-accent-light);
+  //@include btn-shadow();
+  background: transparent;
+  //background: transparent;
+  padding: 5px 15px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 1px;
+
+  border: .5px solid $main-color;
+  color: $main-color;
+  width: 100%;
+  @media (min-width: 576px) {
+   width: 90%;
+
+  }
+  @media (min-width: 768px) {
+    width: auto;
+
+  }
+  &.active{
+    background: $main-color;
+    color: white;
+  }
+}
+
